@@ -18,6 +18,10 @@
     background-color: #9b59b6;
 }
 
+.bg-color-contact {
+    background-color: #fff;
+}
+
 .ui-menu-color-home {
     background-color: #e67e22;
 }
@@ -36,7 +40,10 @@
 
 /* ----------------------------------------Special paddings/margins/text */
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
     margin: 0;
 }
 
@@ -63,6 +70,7 @@ h1,h2,h3,h4 {
     padding: 0 30px 30px;
     float: none;
 }
+
 .history-heading,
 .section-heading {
     font-family: "Exo", sans-serif;
@@ -160,7 +168,7 @@ header {
 /* ----------------------------------------Hover.css */
 
 .hvr-sweep-to-bottom:before {
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
 
@@ -235,12 +243,14 @@ footer {
     clear: both;
 }
 
-.personal-info-item .key, .personal-info-item .value {
+.personal-info-item .key,
+.personal-info-item .value {
     padding-right: 8px;
     display: inline-block;
 }
 
-.personal-info-item .key p, .personal-info-item .value p {
+.personal-info-item .key p,
+.personal-info-item .value p {
     margin: 0;
 }
 
@@ -258,7 +268,7 @@ footer {
 .personal-info-item .value {
     position: relative;
     width: 60%;
-} 
+}
 
 /* ----------------------------------------Skills */
 
@@ -274,7 +284,7 @@ footer {
     font-weight: 400;
     padding: 3px 30px 2px 10px;
     color: #fafafa;
-    background-color: rgba(25,25,25,0.2);
+    background-color: rgba(25, 25, 25, 0.2);
 }
 
 .progress-section {
@@ -327,4 +337,37 @@ footer {
 
 .history-items {
     margin-bottom: 30px;
+}
+
+/* ----------------------------------------Contact Form */
+
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color: #e84610;
+}
+
+/* ----------------------------------------Media Queries */
+
+@media(min-width: 992px) {
+    .center-form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
 }
